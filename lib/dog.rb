@@ -9,6 +9,7 @@ class Dog
   def initialize(name)
     @name = name
     @@all << self
+    return @@all.to_s
   end
 
   def self.all
@@ -20,7 +21,7 @@ class Dog
   end
 
   def self.print_all
-    return @@all.to_s
+    @@all
   end
 
 end
