@@ -9,7 +9,6 @@ class Dog
   def initialize(name)
     @name = name
     @@all << self
-    return @@all.to_s
   end
 
   def self.all
